@@ -1,0 +1,37 @@
+# Data Availability for [Cation Disorder in AgSbTe2 Leads to Glasslike Ultralow Lattice Thermal Conductivity]
+
+* `L1_1`: contains processed data files for L1_1 phase
+* `D4`: contains processed data files for D4 phase
+* `R1`: contains processed data files for R1 phase
+
+---
+
+In each folder,
+
+
+## 1. Thermal Transport Results (BTE outputs)
+
+Files prefixed with `BTE.*` contain phonon thermal transport properties calculated using ShengBTE.
+
+Detailed descriptions of each output format and calculation procedure follow the standard ShengBTE workflow (see ShengBTE documentation).
+
+
+---
+
+## 2. Interatomic Force Constants
+
+* `*.conf`: input configuration files for Phononpy
+* `FORCE_CONSTANTS_2ND`, `FORCE_CONSTANTS_3RD`: second- and third-order interatomic force constants
+* `POSCAR`: crystal structure input
+* `band.dat`: phonon dispersion data
+* `projected_dos.dat`: phonon partial density of states data
+
+---
+
+## 3. Post-processing and Plotting Scripts
+
+* `3dplot-cube.py`: 3D visualization of OD-K
+* `bs_pdos_onceplt.py`: band structure and phonon DOS plotting
+* `offdgnl.out`: OD-K result calculated using Unified Kappa 
+
+
